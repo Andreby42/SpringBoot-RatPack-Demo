@@ -1,4 +1,4 @@
-package xyz.spacexplore.configuration;
+package xyz.spacexplore.ratpack.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,11 +1,11 @@
-package xyz.spacexplore.configuration;
+package xyz.spacexplore.ratpack.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import ratpack.func.Action;
 import ratpack.handling.Chain;
 import ratpack.handling.RequestLogger;
-import xyz.spacexplore.ratpack.RatPackHandler;
+import xyz.spacexplore.ratpack.handlers.RatPackHandler;
 /**
  * ===================================================================================== @Filename :
  * RatPackRestries.java @Description : SpringBoot提供的ratpack注册表类 @Version : 1.0 @Created :

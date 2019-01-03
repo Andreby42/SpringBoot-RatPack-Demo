@@ -1,9 +1,8 @@
-package xyz.spacexplore.configuration;
+package xyz.spacexplore.ratpack.configuration;
 
 import ratpack.func.Action;
 import ratpack.guice.BindingsSpec;
 import ratpack.handling.Chain;
-import ratpack.server.BaseDir;
 import ratpack.server.ServerConfigBuilder;
 import ratpack.spring.config.RatpackServerCustomizerAdapter;
 
