@@ -1,5 +1,6 @@
 package xyz.spacexplore.ratpack.configuration;
 
+import lombok.extern.slf4j.Slf4j;
 import ratpack.func.Action;
 import ratpack.guice.BindingsSpec;
 import ratpack.handling.Chain;
@@ -9,6 +10,7 @@ import ratpack.spring.config.RatpackServerCustomizerAdapter;
 import java.util.List;
 
 /** 另一种配置RatPack的方式 在这里感谢 Hubert Klein Ikkink */
+@Slf4j
 public class CustomRatPackServerConfig extends RatpackServerCustomizerAdapter {
 
   private final CustomRatpackProperties ratpackConfiguration;
@@ -29,6 +31,7 @@ public class CustomRatPackServerConfig extends RatpackServerCustomizerAdapter {
 
   @Override
   public Action<ServerConfigBuilder> getServerConfig() {
+      log.info("ratpack serverconfig load compelete!");
     return serverConfigBuilder ->
         serverConfigBuilder.development(ratpackConfiguration.isDevelopment())
                 .port(ratpackConfiguration.port)
@@ -41,4 +44,5 @@ public class CustomRatPackServerConfig extends RatpackServerCustomizerAdapter {
                 // .etc
                 .build();
   }
+
 }

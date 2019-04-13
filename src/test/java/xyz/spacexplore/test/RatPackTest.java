@@ -1,11 +1,12 @@
 package xyz.spacexplore.test;
 
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import ratpack.test.MainClassApplicationUnderTest;
 import xyz.spacexplore.SpringBootRatPackApplication;
+
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RatPackTest {
   MainClassApplicationUnderTest appUnderTest =

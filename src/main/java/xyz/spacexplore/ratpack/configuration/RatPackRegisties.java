@@ -1,5 +1,6 @@
 package xyz.spacexplore.ratpack.configuration;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import ratpack.func.Action;
@@ -14,6 +15,7 @@ import xyz.spacexplore.ratpack.handlers.RatPackHandler;
  * <p>=====================================================================================
  */
 @Configuration
+@Slf4j
 public class RatPackRegisties {
   // 一个handler
   @Bean
