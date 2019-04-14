@@ -8,6 +8,7 @@ import ratpack.func.Action;
 import ratpack.handling.Chain;
 import ratpack.spring.config.EnableRatpack;
 
+
 @SpringBootApplication
 @EnableRatpack
 @ServletComponentScan

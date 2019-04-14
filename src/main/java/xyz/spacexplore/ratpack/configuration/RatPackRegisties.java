@@ -7,6 +7,7 @@ import ratpack.func.Action;
 import ratpack.handling.Chain;
 import ratpack.handling.RequestLogger;
 import xyz.spacexplore.ratpack.handlers.RatPackHandler;
+
 /**
  * ===================================================================================== @Filename :
  * RatPackRestries.java @Description : SpringBoot提供的ratpack注册表类 @Version : 1.0 @Created :
@@ -22,11 +23,6 @@ public class RatPackRegisties {
   public RatPackHandler ratPackHandler() {
     return name -> name + ": THIS IS A MSG";
   }
-  /**
-   * path=http://localhost:9527/message/
-   *
-   * @return
-   */
   @Bean
   Action<Chain> messageHandler() {
     return chain ->
@@ -42,4 +38,5 @@ public class RatPackRegisties {
                   ctx.render(message);
                 });
   }
+
 }
